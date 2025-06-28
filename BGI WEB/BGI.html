@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Especialistas em climatização, PMOC, manutenção e instalação de sistemas de refrigeração." />
+    <title>BGI Refrigeração & Climatização</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Outfit", sans-serif;
+        background-color: #0f172a;
+        color: white;
+        scroll-behavior: smooth;
+        margin: 0;
+      }
+      header {
+        transition: background-color 0.4s ease, box-shadow 0.4s ease;
+      }
+      header.scrolled {
+        background-color: rgba(10, 46, 80, 0.95);
+        box-shadow: 0 2px 10px rgb(58 190 249 / 0.5);
+      }
+      .bg-hero {
+        background-image: url("img/1832266d-f3aa-44af-bf66-da252ebd38d7.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+      }
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top right, rgba(0, 0, 0, 0.65), rgba(10, 46, 80, 0.6));
+        z-index: 0;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 90vw;
+        padding: 0 1rem;
+      }
+      #typed {
+        border-right: 3px solid #3abef9;
+        font-weight: 800;
+        font-size: 3rem;
+        animation: blink-caret 0.7s step-end infinite;
+        margin-bottom: 1.2rem;
+        min-height: 4.5rem;
+      }
+      @keyframes blink-caret {
+        50% { border-color: transparent; }
+      }
+      .btn-primary {
+        background: linear-gradient(to right, #3abef9, #38bdf8);
+        color: #0a2e50;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 12px #3abef9;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+      }
+      .btn-primary:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 24px #60a5fa;
+      }
+      .card {
+        background-color: #1e344a;
+        border-radius: 1rem;
+        padding: 2.5rem 2rem;
+        box-shadow: 0 6px 20px rgba(58, 190, 249, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(58, 190, 249, 0.5);
+      }
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #64748b;
+        padding: 2rem 1rem;
+        border-top: 1px solid #334155;
+      }
+      #backToTopBtn {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        background-color: #3abef9;
+        color: #0a2e50;
+        padding: 0.8rem 1.2rem;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        box-shadow: 0 0 12px #3abef9;
+        display: none;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-transparent">
+      <h1 class="text-2xl font-bold text-[#3ABEF9]">BGI Refrigeração</h1>
+      <nav class="space-x-8 font-semibold text-white">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#instalacoes">Instalações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <section class="bg-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 id="typed"></h1>
+        <p class="text-gray-300 text-lg max-w-xl mx-auto">Soluções completas em PMOC, manutenção e instalações de climatização industrial e comercial.</p>
+        <a href="#servicos" class="btn-primary mt-8">🔧 Conheça nossos serviços</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="max-w-3xl mx-auto py-20 px-6 text-center">
+      <h2 class="text-4xl font-extrabold mb-6">Quem Somos</h2>
+      <p class="text-gray-400 text-lg leading-relaxed">
+        A <strong>BGI Refrigeração</strong> é uma empresa especializada em climatização, manutenção e instalações. Atuamos com foco em soluções técnicas para ambientes corporativos e industriais, com atendimento de excelência e comprometimento.
+      </p>
+    </section>
+
+    <section id="servicos" class="max-w-5xl mx-auto py-16 px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Serviços</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="card">
+          <h3 class="text-2xl font-bold mb-4">📋 PMOC & Manutenção Preventiva</h3>
+          <p class="text-gray-300 mb-4">Execução completa do PMOC com foco em segurança, eficiência energética e vida útil dos sistemas. Abaixo, registros reais de um PMOC realizado em equipamento tipo Self.</p>
+          <div class="grid grid-cols-2 gap-2 mt-4">
+            <img src="Imagens de PMOC/PMOC SELF ANTES.jpeg" class="rounded-lg" alt="PMOC Self Antes" />
+            <img src="Imagens de PMOC/PMOC SELF ANTES 2.jpeg" class="rounded-lg" alt="PMOC Self Antes" />
+            <img src="Imagens de PMOC/PMOC SELF ANTES 3.jpeg" class="rounded-lg" alt="PMOC Self Antes" />
+            <img src="Imagens de PMOC/PMOC SELF ANTES 4.jpeg" class="rounded-lg" alt="PMOC Self Antes" />
+            <img src="Imagens de PMOC/PMOC SELF DEPOIS.jpeg" class="rounded-lg" alt="PMOC Self Depois" />
+            <img src="Imagens de PMOC/SELF PMOC.jpeg" class="rounded-lg" alt="PMOC Self Depois" />
+          </div>
+         </div>                                                                                                   
+
+        <div class="card">
+          <h3 class="text-2xl font-bold mb-4">🛠️ Manutenção Corretiva</h3>
+          <p class="text-gray-300">Correção rápida e eficaz de falhas em sistemas de climatização como Split, Self, Chiller e climatizadores industriais.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="instalacoes" class="max-w-5xl mx-auto py-16 px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Instalações</h2>
+      <div class="card">
+        <h3 class="text-2xl font-bold mb-4">❄️ Instalação de Sistemas</h3>
+        <p class="text-gray-300 mb-4">Instalações técnicas com padrão profissional de Splitões e equipamentos industriais. Confira algumas das nossas execuções:</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
+          <img src="Imagens de Instalação/INSTALAÇÃO SPLITÃO.jpeg" class="rounded-lg" alt="Instalação Splitão " />
+          <img src="Imagens de Instalação/INSTALAÇÃO SPLITÃO 2.jpeg" class="rounded-lg" alt="Instalação Splitão " />
+          <img src="Imagens de Instalação/INSTALAÇÃO CONDENSADORAS SPLITÃO.jpeg" class="rounded-lg" alt="Instalação Splitão Condensadoras" />
+          <img src="Imagens de Instalação/INSTALAÇÃO CONDENSADORAS SPLITÃO 2.jpeg" class="rounded-lg" alt="Instalação Splitão Condensadora" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="max-w-3xl mx-auto py-20 px-6 text-center">
+      <h2 class="text-4xl font-extrabold mb-6">Fale Conosco</h2>
+      <p class="text-gray-400 mb-6">Escolha a melhor forma de contato com nossa equipe técnica.</p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="mailto:bgi.refrigeracao09@gmail.com" class="btn-primary">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="E-mail" class="w-5 h-5" />
+          E-mail
+        </a>
+        <a href="https://wa.me/5511978619984" target="_blank" class="btn-primary">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-5 h-5" />
+          WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 BGI Refrigeração. Todos os direitos reservados.</p>
+      <p>bgi.refrigeracao09@gmail.com</p>
+    </footer>
+
+    <button id="backToTopBtn" title="Voltar ao topo">↑</button>
+
+    <script>
+      const typedText = "Excelência em Climatização";
+      const typedEl = document.getElementById("typed");
+      let idx = 0;
+      function typeWriter() {
+        if (idx < typedText.length) {
+          typedEl.textContent += typedText.charAt(idx);
+          idx++;
+          setTimeout(typeWriter, 100);
+        } else {
+          setTimeout(() => {
+            typedEl.textContent = "";
+            idx = 0;
+            typeWriter();
+          }, 3000);
+        }
+      }
+      typeWriter();
+      window.addEventListener("scroll", () => {
+        document.getElementById("header").classList.toggle("scrolled", window.scrollY > 50);
+        document.getElementById("backToTopBtn").style.display = window.scrollY > 300 ? "block" : "none";
+      });
+      document.getElementById("backToTopBtn").addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
